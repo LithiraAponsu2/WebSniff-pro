@@ -1,0 +1,10 @@
+flutter run -d edge --web-browser-flag "--disable-web-security"
+uvicorn whatsapp_ip_api:app --reload
+uvicorn api_traceroute_linux:app --reload
+Swagger UI: http://localhost:8000/docs
+ReDoc: http://localhost:8000/redoc   
+http://127.0.0.1:8000/get_ip_addresses?domain=facebook.com
+uvicorn capture_api:app --host 127.0.0.1 --port 7000
+uvicorn filter_file_create_api:app --host 127.0.0.1 --port 6000
+tasklist
+
