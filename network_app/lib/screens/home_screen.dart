@@ -83,18 +83,20 @@ class _HomePageState extends State<HomePage> {
                           'Route IPs:',
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: ipAddresses.map((ip) {
-                            return Padding(
-                              padding: const EdgeInsets.symmetric(
-                                vertical: 4.0,
-                                horizontal: 8.0,
-                              ),
-                              child: Text(ip),
-                            );
-                          }).toList(),
-                        ),
+                        SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: ipAddresses.map((ip) {
+                              return Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 4.0,
+                                  horizontal: 8.0,
+                                ),
+                                child: Text(ip),
+                              );
+                            }).toList(),
+                          ),
+                        )
                       ],
                     ),
                   ),

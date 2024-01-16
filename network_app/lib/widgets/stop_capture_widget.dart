@@ -145,6 +145,7 @@ class StopCaptureWidget extends StatelessWidget {
   List<DataColumn> _buildColumns() {
     List<String> dummyColumnNames = [
       'Frame No.',
+      'Time',
       'Source IP',
       'Destination IP',
       'Protocols',
